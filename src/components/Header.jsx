@@ -1,7 +1,7 @@
 import { useLocation } from "react-router-dom";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
-import { brainwave } from "../assets";
+
 import { navigation } from "../constants";
 import Button from "./Button";
 import MenuSvg from "../assets/svg/MenuSvg";
@@ -36,9 +36,28 @@ const Header = () => {
       }`}
     >
       <div className="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-        <a className="block w-[12rem] xl:mr-8" href="#hero">
-          <img src={brainwave} width={190} height={40} alt="Brainwave" />
-        </a>
+  <a className="flex items-center space-x-2" href="#hero">
+    <img src={`src/images/rudra.png`} width={30} height={20} alt="Brainwave" />
+    <div className="flex space-x-2 font-extrabold text-3xl">
+      <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-black drop-shadow-md">
+        R
+      </p>
+      <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-black drop-shadow-md">
+        U
+      </p>
+      <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-black drop-shadow-md">
+        D
+      </p>
+      <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-black drop-shadow-md">
+        R
+      </p>
+      <p className="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-black drop-shadow-md">
+        A
+      </p>
+    </div>
+  </a>
+
+
 
         <nav
           className={`${
